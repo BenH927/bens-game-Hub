@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #007BFF, #00FF7F);
@@ -17,12 +18,13 @@ body {
 }
 
 .search-box input {
-    padding: 10px;
+    padding: 15px;
     width: 80%;
-    max-width: 400px;
-    font-size: 16px;
+    max-width: 600px;
+    font-size: 18px;
     border: 2px solid #007BFF;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .game-links {
