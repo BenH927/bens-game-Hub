@@ -15,7 +15,10 @@
         <div class="heading">
             <h1>Ben's Game Hub</h1>
         </div>
-        <div class="game-links">
+        <div class="search-box">
+            <input type="text" id="search-input" onkeyup="searchGames()" placeholder="Search for games...">
+        </div>
+        <div class="game-links" id="game-links">
             <a href="1">1</a>
             <a href="1v1.lol">1v1.LOL</a>
             <a href="10minutestilldawn">10 Minutes Till Dawn</a>
@@ -61,7 +64,7 @@
             <a href="minecraft0.30">Minecraft 0.30</a>
             <a href="minecraft1.3">Minecraft 1.3</a>
             <a href="minecraft1.5.2">Minecraft 1.5.2</a>
-            <a href="minecraft1.8.8">Minecraft 1.8.8.html</a> <!-- New button added here -->
+            <a href="minecraft1.8.8">Minecraft 1.8.8</a>
             <a href="motox3m2">Moto X3M 2</a>
             <a href="ovo">OvO</a>
             <a href="pacman">Pac-Man</a>
@@ -101,5 +104,23 @@
             <a href="xx142b2.exe">xx142-b2.exe</a>
         </div>
         <p>(More games coming soon!)</p>
+
+        <script>
+            function searchGames() {
+                var input, filter, links, i, txtValue;
+                input = document.getElementById('search-input');
+                filter = input.value.toLowerCase();
+                links = document.getElementById('game-links').getElementsByTagName('a');
+
+                for (i = 0; i < links.length; i++) {
+                    txtValue = links[i].textContent || links[i].innerText;
+                    if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                        links[i].style.display = "";
+                    } else {
+                        links[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
