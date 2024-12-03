@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: url('https://tse3.mm.bing.net/th/id/OIP.U3GsM1caiq3uT-vkEiw2ZwHaHa?w=180&h=180&c=7&r=0&o=5&pid=1.7') no-repeat center center fixed; 
-    background-size: cover;
+    background: linear-gradient(135deg, #007BFF, #00FF7F);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -39,4 +38,14 @@ body {
     padding: 15px 30px;
     margin: 10px;
     background-color: rgba(0, 123, 255, 0.8);
-    color
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.game-links a:hover {
+    background-color: rgba(0, 123, 255, 1);
+    transform: scale(1.05);
+}
