@@ -1,32 +1,26 @@
-html {
-  background-color: #202124;
-  color: #ffffff;
-  font-family: Inter sans-serif;
-  }
-  .heading {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    position: fixed;
-    width: 100%;
-              }
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom:0;
-    width: 100%;
-    text-align: center;
-  }
-  a:link {
-    color: #8ab4f8;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:visited {
-    color: #c58af9;
-    background-color: transparent;
-    text-decoration: none;
-  }
-  a:hover {
-    color: #c58af9;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+}
+
+.heading h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+.game-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.game-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007BFF;
