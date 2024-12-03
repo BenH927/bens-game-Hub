@@ -1,14 +1,15 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #007BFF, #00FF7F);
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
 .heading h1 {
-    color: #333;
+    color: white;
     margin: 20px 0;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .game-links {
@@ -21,6 +22,18 @@ body {
 
 .game-links a {
     display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    background-color: #007BFF;
+    padding: 15px 30px;
+    margin: 10px;
+    background-color: white;
+    color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.game-links a:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: scale(1.05);
+}
