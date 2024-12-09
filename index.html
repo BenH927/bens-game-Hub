@@ -15,8 +15,7 @@
         <h1>Tyler's Game Hub</h1>
     </div>
     <div class="container">
-        <input type="text" class="search-bar" placeholder="Search games...">
-        <button class="search-button" onclick="searchGames()">Search</button>
+        <input type="text" class="search-bar" placeholder="Search games..." onkeyup="searchGames()">
     </div>
     <div class="links">
         <a href="1" class="link">1</a>
@@ -106,4 +105,9 @@
         <div>
             <a href="https://github.com/TylerPalko/gamehub">Source Code</a>
             <a href="https://www.youtube.com/channel/UC8Sz_LcrkLErkxXbWKlW59A">My Youtube</a>
-            <a href="bitcoin
+            <a href="bitcoin:bc1q5072l0wec75kvatudg3qh8zxk40dmem0d0zu0kzszemxc87qqv9s9z608y">Donate BTC</a>
+        </div>
+    </footer>
+    <script>
+        function searchGames() {
+            let input = document.querySelector('.
