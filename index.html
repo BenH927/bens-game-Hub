@@ -8,80 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tyler's Game Hub</title>
     <link rel="icon" type="image/x-icon" href="resources/favicon.ico">
-    <link rel="stylesheet" href="style.css" />
-    <style>
-        body {
-            background-color: #20B2AA; /* Light teal background */
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        .heading h1 {
-            text-align: center;
-            padding: 20px;
-            background-color: #008080; /* Darker teal */
-            border-radius: 10px;
-            margin: 20px;
-        }
-        .container {
-            text-align: center;
-        }
-        .button, .search-button {
-            background-color: #008080;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
-            margin: 10px;
-        }
-        .button:hover, .search-button:hover {
-            background-color: #007070;
-        }
-        .search-bar {
-            padding: 10px;
-            border-radius: 5px;
-            border: 1px solid #008080;
-            margin-right: 10px;
-        }
-        .link {
-            display: block;
-            padding: 10px;
-            background-color: #008080;
-            color: white;
-            text-decoration: none;
-            margin: 10px;
-            border-radius: 5px;
-        }
-        .link:hover {
-            background-color: #007070;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        footer a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-    </style>
-    <script>
-        function searchGames() {
-            let input = document.querySelector('.search-bar').value.toLowerCase();
-            let links = document.querySelectorAll('.link');
-            links.forEach(link => {
-                if (link.textContent.toLowerCase().includes(input)) {
-                    link.style.display = '';
-                } else {
-                    link.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="heading">
@@ -91,13 +18,89 @@
         <input type="text" class="search-bar" placeholder="Search games...">
         <button class="search-button" onclick="searchGames()">Search</button>
     </div>
-    <br><br>
-    <div class="container">
+    <div class="links">
         <a href="1" class="link">1</a>
         <a href="1v1.lol" class="link">1v1.LOL</a>
         <a href="10minutestilldawn" class="link">10 Minutes Till Dawn</a>
         <a href="2048" class="link">2048</a>
-        <!-- Add more links as needed -->
+        <a href="adanceoffireandice" class="link">A Dance of Fire And Ice</a>
+        <a href="adarkroom" class="link">A Dark Room</a>
+        <a href="adrenalinechallenge" class="link">Adrenaline Challenge</a>
+        <a href="adventuredrivers" class="link">Adventure Drivers</a>
+        <a href="asteroids" class="link">Asteroids</a>
+        <a href="astray" class="link">Astray</a>
+        <a href="backcountry" class="link">Backcountry</a>
+        <a href="badicecream" class="link">Bad Ice Cream</a>
+        <a href="badicecream2" class="link">Bad Ice Cream 2</a>
+        <a href="badicecream3" class="link">Bad Ice Cream 3</a>
+        <a href="basketrandom" class="link">Basket Random</a>
+        <a href="bitlife" class="link">BitLife</a>
+        <a href="bounceback" class="link">Bounceback</a>
+        <a href="boxingrandom" class="link">Boxing Random</a>
+        <a href="breaklock" class="link">BreakLock</a>
+        <a href="breakout" class="link">Breakout</a>
+        <a href="chess" class="link">Chess</a>
+        <a href="chromedino" class="link">Chrome Dino</a>
+        <a href="connect3" class="link">Connect 3</a>
+        <a href="cookieclicker" class="link">Cookie Clicker</a>
+        <a href="cubefield" class="link">Cubefield</a>
+        <a href="doodlejump" class="link">Doodle Jump</a>
+        <a href="ducklife" class="link">Duck Life</a>
+        <a href="ducklife2" class="link">Duck Life 2</a>
+        <a href="ducklife3" class="link">Duck Life 3</a>
+        <a href="ducklife4" class="link">Duck Life 4</a>
+        <a href="edgesurf" class="link">Edge Surf</a>
+        <a href="evilglitch" class="link">Evil Glitch</a>
+        <a href="factoryballsforever" class="link">Factory Balls Forever</a>
+        <a href="fireboyandwatergirlintheforesttemple" class="link">Fireboy and Watergirl in the Forest Temple</a>
+        <a href="flappybird" class="link">Flappy Bird</a>
+        <a href="friendlyfire" class="link">Friendly Fire</a>
+        <a href="geometrydash" class="link">Geometry Dash</a>
+        <a href="gopherkart" class="link">Gopher Kart</a>
+        <a href="hextris" class="link">Hextris</a>
+        <a href="iceagebabyadventure" class="link">Ice Age Baby Adventure</a>
+        <a href="jumpingfrogspuzzle" class="link">Jumping Frogs Puzzle</a>
+        <a href="konnekt" class="link">Konnekt</a>
+        <a href="minecraft0.30" class="link">Minecraft 0.30</a>
+        <a href="minecraft1.3" class="link">Minecraft 1.3</a>
+        <a href="minecraft1.5.2" class="link">Minecraft 1.5.2</a>
+        <a href="motox3m2" class="link">Moto X3M 2</a>
+        <a href="ovo" class="link">OvO</a>
+        <a href="pacman" class="link">Pac-Man</a>
+        <a href="pushback" class="link">Pushback</a>
+        <a href="racer" class="link">Racer</a>
+        <a href="radiusraid" class="link">Radius Raid</a>
+        <a href="retrobowl" class="link">Retro Bowl</a>
+        <a href="retrohaunt" class="link">Retrohaunt</a>
+        <a href="riddleschool" class="link">Riddle School</a>
+        <a href="riddleschool2" class="link">Riddle School 2</a>
+        <a href="riddleschool3" class="link">Riddle School 3</a>
+        <a href="riddleschool4" class="link">Riddle School 4</a>
+        <a href="riddleschool5" class="link">Riddle School 5</a>
+        <a href="roadblocks" class="link">Roadblocks</a>
+        <a href="sleepingbeauty" class="link">Sleeping Beauty</a>
+        <a href="slope" class="link">Slope</a>
+        <a href="snake" class="link">Snake</a>
+        <a href="snowrider3d" class="link">Snow Rider 3D</a>
+        <a href="soccerrandom" class="link">Soccer Random</a>
+        <a href="spacecompany" class="link">Space Company</a>
+        <a href="spaceinvaders" class="link">Space Invaders</a>
+        <a href="tetris" class="link">Tetris</a>
+        <a href="thechromaincident" class="link">The Chroma Incident</a>
+        <a href="thereisnogame" class="link">There Is No Game!</a>
+        <a href="towermaster" class="link">Tower Master</a>
+        <a href="tunnelrush" class="link">Tunnel Rush</a>
+        <a href="underrun" class="link">Under Run</a>
+        <a href="vex3" class="link">Vex 3</a>
+        <a href="vex4" class="link">Vex 4</a>
+        <a href="vex5" class="link">Vex 5</a>
+        <a href="vex6" class="link">Vex 6</a>
+        <a href="vex7" class="link">Vex 7</a>
+        <a href="volleyrandom" class="link">Volley Random</a>
+        <a href="webretro" class="link">Webretro (retro console emulator)</a>
+        <a href="worldshardestgame" class="link">World's Hardest Game</a>
+        <a href="worldshardestgame2" class="link">World's Hardest Game 2</a>
+        <a href="xx142b2.exe" class="link">xx142-b2.exe</a>
     </div>
     <footer>
         <div>
@@ -106,5 +109,8 @@
             <a href="bitcoin:bc1q5072l0wec75kvatudg3qh8zxk40dmem0d0zu0kzszemxc87qqv9s9z608y">Donate BTC</a>
         </div>
     </footer>
-</body>
-</html>
+    <script>
+        function searchGames() {
+            let input = document.querySelector('.search-bar').value.toLowerCase();
+            let links = document.querySelectorAll('.link');
+            links
