@@ -1,32 +1,72 @@
-html {
-  background-color: #202124;
-  color: #ffffff;
-  font-family: Inter sans-serif;
-  }
-  .heading {
+body {
+    background-color: #20B2AA; /* Light teal background */
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.heading h1 {
     text-align: center;
-    position: fixed;
-    width: 100%;
-              }
-  .footer {
-    position: fixed;
-    left: 0;
-    bottom:0;
-    width: 100%;
+    padding: 20px;
+    background-color: #008080; /* Darker teal */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.container {
     text-align: center;
-  }
-  a:link {
-    color: #8ab4f8;
-    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #008080;
+    margin-right: 10px;
+}
+
+.search-button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #007070;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link {
+    display: inline-block;
+    padding: 10px;
+    background-color: #008080;
+    color: white;
     text-decoration: none;
-  }
-  a:visited {
-    color: #c58af9;
-    background-color: transparent;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.link:hover {
+    background-color: #007070;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
     text-decoration: none;
-  }
-  a:hover {
-    color: #c58af9;
-    background-color: transparent;
-    text-decoration: underline;
-  }
+    margin: 0 10px;
+}
