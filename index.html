@@ -17,7 +17,7 @@
     <div class="container">
         <input type="text" class="search-bar" placeholder="Search games..." onkeyup="searchGames()">
     </div>
-    <div class="links">
+    <div class="links" id="gameLinks">
         <a href="1" class="link">1</a>
         <a href="1v1.lol" class="link">1v1.LOL</a>
         <a href="10minutestilldawn" class="link">10 Minutes Till Dawn</a>
@@ -110,4 +110,5 @@
     </footer>
     <script>
         function searchGames() {
-            let input = document.querySelector('.
+            let input = document.querySelector('.search-bar').value.toLowerCase();
+            let links = document.querySelectorAll('.link
